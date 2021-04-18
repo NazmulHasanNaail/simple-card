@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Card from './Card';
+import Sdata from './Sdata';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ let data = Sdata.map((Sdata)=>{
+     return <>
+        <Card 
+            imgSrc={Sdata.imgSrc} 
+            cat={Sdata.category}
+            title={Sdata.title}
+            btnLink={Sdata.link} 
+         /> 
+     </>
+ })
+ 
+function App(){
+    return<>
+      <h2 className="heading">List of top zee5 series 2021</h2>
+      {data}
+     </>
 }
-
 export default App;

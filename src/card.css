@@ -1,0 +1,27 @@
+
+.card-body{
+    background-color: white;
+    margin: 100px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 13px 5px rgba(165,165,165,0.66);
+    overflow: hidden;
+    display: inline-block;
+    transform: scale(1);
+    transition: 0.3s all;
+}
+.Img-box img{
+    width: 100%;
+}
+.card-info{
+    padding: 20px;
+}
+.card-btn{
+    border: 1px solid gray;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+.card-body:hover{
+    transform: scale(1.1);
+}
