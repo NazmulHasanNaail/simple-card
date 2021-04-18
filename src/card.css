@@ -1,14 +1,18 @@
-
+.car-col{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    justify-content: center;
+}
 .card-body{
     background-color: white;
-    margin: 100px;
-    width: 400px;
     border-radius: 10px;
     box-shadow: 6px 6px 13px 5px rgba(165,165,165,0.66);
     overflow: hidden;
-    display: inline-block;
     transform: scale(1);
     transition: 0.3s all;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .Img-box img{
     width: 100%;

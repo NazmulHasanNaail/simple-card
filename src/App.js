@@ -12,11 +12,13 @@ import Sdata from './Sdata';
          /> 
      </>
  })
- 
+
 function App(){
     return<>
       <h2 className="heading">List of top zee5 series 2021</h2>
-      {data}
+      <div className="car-row">
+       {data}
+      </div>
      </>
 }
 export default App;
